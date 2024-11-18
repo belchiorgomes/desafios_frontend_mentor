@@ -1,7 +1,65 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Sriracha&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+:root{
+    --tamanhoMobile: 375px;
+    --tamanhoDesktop: 1440px;
+
+    --container: hsl(0, 0%, 100%);
+    --fundo: hsl(212, 45%, 89%);
+    --paragrafo: hsl(216, 15%, 48%);
+    --titulo: hsl(218, 44%, 22%);
+}
+
+body{
+    background-color: var(--fundo);
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: var(--tamanhoMobile);
+    height: auto;
+    padding: 10px;
+    border-radius: 18px;
+    background-color: var(--container);
+}
+
+.container .container_QRcode{
+    width: 100%;
+    height: 350px;
+    border-radius: 18px;
+    overflow: hidden;
+    background-image: url("../imagem/image-qr-code.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.container .container_txt{
+    height: auto;
+    padding: 20px;
+}
+
+.container .container_txt h2{
+    color: var(--titulo);
+    font-weight: 700;
+    margin-block-end: 10px;
+}
+
+.container .container_txt p{
+    color: var(--paragrafo);
+    font-weight: 400;
 }
