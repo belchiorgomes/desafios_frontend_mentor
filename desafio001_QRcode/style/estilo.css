@@ -53,13 +53,17 @@ body{
     padding: 20px;
 }
 
-.container .container_txt h2{
+.container .container_txt h1{
     color: var(--titulo);
     font-weight: 700;
     margin-block-end: 10px;
+    text-align: center;
+    font-size: 1.8em;
 }
 
 .container .container_txt p{
     color: var(--paragrafo);
     font-weight: 400;
+    font-size: 1.1em;
+    text-align: center;
 }
